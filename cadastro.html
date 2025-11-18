@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rede Adote - Início</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="top-header">
+        <button class="hamburger-menu" id="hamburger-menu">
+            &#9776;
+        </button>
+
+        <img src="imagens/logo rede adote.png" alt="Logo Rede Adote" width="70" height="100">
+
+    </header>
+
+    <nav class="sidebar" id="nav-links">
+
+        <button class="close-menu" id="close-menu">&times;</button>
+
+
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="projeto.html">Projeto</a></li>
+            <li><a href="cadastro.html">Cadastro</a></li>
+        </ul>
+
+        <div class="dark-mode-toggle">
+            <label class="toggle-label" for="dark-mode-switch">Modo Escuro</label>
+            <label class="switch">
+                <input type="checkbox" id="dark-mode-switch">
+                <span class="slider round"></span>
+            </label>
+        </div>
+    </nav>
+
+    <div class="content-wrapper">
+
+        <section class="hero-image-section">
+
+            <img src="imagens/doe ração.png" alt="Banner principal da Rede Adote" class="hero-banner-image">
+
+
+    </div>
+
+    <main>
+
+        <section>
+            <h2>Cadastre-se e faça parte da Rede Adote!</h2>
+            <p>Receba em seu aplicativo fotos de animais disponíveis para adoção e conheça as ONGs parceiras.
+                Além disso, você pode fazer doações de ração diretamente pelo app e ajudar quem mais precisa.</p>
+
+            <form action="submit_donation.html" method="post">
+
+                <comment-tag id="1"><h3>Dados Pessoais:</h3></comment-tag id="1">
+                <label for="name">Nome Completo:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="phone">Telefone:</label><br>
+                <comment-tag id="2"><input type="tel" id="phone" name="phone" required></comment-tag id="2"><br><br>
+
+                <label for="dob">Data de Nascimento:</label><br>
+                <input type="date" id="dob" name="dob" required><br><br>
+
+                <label for="cpf">CPF:</label><br>
+                <input type="text" id="cpf" name="cpf" required><br><br>
+
+                <label for="amount">Valor da Doação (R$):</label><br>
+                <input type="number" id="amount" name="amount" min="1" required><br><br>
+
+                <comment-tag id="3"><h3>Endereço:</h3></comment-tag id="3">
+                <label for="street">Rua:</label><br>
+                <input type="text" id="street" name="street" required><br><br>
+
+                <comment-tag id="4"><label for="city">Cidade:</label><br>
+                <input type="text" id="city" name="city" required><br><br></comment-tag id="4"><br><br>`" type="suggestion">
+
+                <label for="state">Estado:</label><br>
+                <input type="text" id="state" name="state" required><br><br>
+
+                <label for="tipo_doacao">Tipo de Doação:</label><br>
+                <select id="tipo_doacao" name="tipo_doacao" required>
+                    <option value="" disabled selected>Escolha o tipo de doação</option>
+                    <option value="Pix">Pix</option>
+                    <option value="Cartão">Cartão</option>
+                    <option value="Ração">Ração</option>
+                </select><br><br>
+
+                <input type="submit" value="Doar Agora">
+                <comment-tag id="5"></form></comment-tag id="5">
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Rede Adote. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
